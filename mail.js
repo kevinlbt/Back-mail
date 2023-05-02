@@ -14,8 +14,8 @@ const port = 3050;
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'jp.postprod@gmail.com',
-    pass: 'lxufqxztvkexzihi'
+    user: 'emailapi.send@gmail.com',
+    pass: 'plctiaymqzkbhqmv'
   }
 });
 
@@ -33,7 +33,7 @@ app.post('/api/sendEmail', (req, res) => {
     const { name, firstname, subject, text, replyTo } = req.body;
     const mailOptions = {
       from: 'jp.postprod@gmail.com',
-      to: "jp.postprod@gmail.com",
+      to: "kevin.lebot@hotmail.fr",
     replyTo: replyTo,
     subject: subject,
     text: `Bonjour,
