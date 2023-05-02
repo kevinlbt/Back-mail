@@ -32,7 +32,7 @@ app.post('/api/sendEmail', (req, res) => {
     
     const { name, firstname, subject, text, replyTo } = req.body;
     const mailOptions = {
-      to: "kevin.lebot@hotmail.fr",
+      to: req.headers.dest,
     replyTo: replyTo,
     subject: subject,
     text: `Bonjour,
