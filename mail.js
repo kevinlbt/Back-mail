@@ -46,7 +46,7 @@ app.post('/api/sendEmail', (req, res) => {
 
     Cordialement,
 
-    Ton application coder par kevin le best`
+    Ton application coder par le best coder`
   };
 
   // Envoi de l'e-mail
