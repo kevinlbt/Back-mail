@@ -32,7 +32,6 @@ app.post('/api/sendEmail', (req, res) => {
     
     const { name, firstname, subject, text, replyTo } = req.body;
     const mailOptions = {
-      from: 'jp.postprod@gmail.com',
       to: "kevin.lebot@hotmail.fr",
     replyTo: replyTo,
     subject: subject,
@@ -42,11 +41,11 @@ app.post('/api/sendEmail', (req, res) => {
 
     ${text}
 
-    Tu pouvez répondre à cet email en utilisant l'adresse ${replyTo}.
+    Tu peux répondre à cet email en utilisant l'adresse ${replyTo}.
 
     Cordialement,
 
-    Ton application coder par le best coder`
+    Ton application coder par kevin le best dev`
   };
 
   // Envoi de l'e-mail
